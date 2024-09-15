@@ -4,6 +4,9 @@ import gdown
 import cv2
 import numpy as np
 import os
+
+os.environ['CUDA_LAUNCH_BLOCKING']="1"
+os.environ['TORCH_USE_CUDA_DSA'] = "1"
 import sys
 sys.path.append(sys.path[0]+"/tracker")
 sys.path.append(sys.path[0]+"/tracker/model")
